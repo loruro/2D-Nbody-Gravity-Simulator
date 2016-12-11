@@ -134,7 +134,7 @@ void MainWindow::OptionsMenuInit() {
   set_trails_action_ = new QAction("Trails", this);
   options_menu_->addAction(set_trails_action_);
   set_trails_action_->setCheckable(true);
-  connect(set_trails_action_, SIGNAL(triggered()), this ,SLOT(SetTrails()));
+  connect(set_trails_action_, SIGNAL(triggered()), this, SLOT(SetTrails()));
 
   set_aa_action_ = new QAction("&Antialiasing", this);
   options_menu_->addAction(set_aa_action_);
@@ -168,7 +168,7 @@ void MainWindow::SlidersInit() {
   mass_slider_ = new QSlider(Qt::Horizontal, view_);
   mass_slider_->setRange(1, 1000000);
   mass_slider_->setValue(1);
-  connect(mass_slider_, SIGNAL(valueChanged(int)), this ,SLOT(ChangeMass(int)));
+  connect(mass_slider_, SIGNAL(valueChanged(int)), this, SLOT(ChangeMass(int)));
   mass_label_ = new QLabel("", view_);
 
   density_slider_ = new QSlider(Qt::Horizontal, view_);
@@ -253,7 +253,7 @@ int MainWindow::RandInt(int low, int high) const {
   return qrand() % ((high + 1) - low) + low;
 }
 
-Body *MainWindow::AddPlanet(qreal mass, qreal density,qreal semi_major_axis,
+Body *MainWindow::AddPlanet(qreal mass, qreal density, qreal semi_major_axis,
                             qreal eccentricity, qreal angle) {
   // Calculations of proper velocity and position of planet which will create
   // desired orbit around Sun.
@@ -302,7 +302,7 @@ void MainWindow::DeleteAll() {
     delete body;
   }
   zoom_slider_->setValue(0);
-  view_->centerOn(0,0);
+  view_->centerOn(0, 0);
 }
 
 void MainWindow::LoadSolarSystem() {

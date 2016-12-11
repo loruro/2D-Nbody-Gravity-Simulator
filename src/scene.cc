@@ -261,7 +261,7 @@ void Scene::AdvanceRungeKutta() {
   body->k3dx_ = time_step_ * (body->GetVelocity() + body->k2dv_ * 0.5);
 
   i = 0;
-  foreach (Body* body_1, body_list_.mid(0,body_list_.count() - 1)) {
+  foreach (Body* body_1, body_list_.mid(0, body_list_.count() - 1)) {
     body_1->k4dx_ = time_step_ * (body_1->GetVelocity() + body_1->k3dv_);
     foreach (Body* body_2, body_list_.mid(1 + i, body_list_.count() - 1 - i)) {
       qreal pos_1_x = body_1->pos().x() + body_1->k3dx_.x();
@@ -299,10 +299,10 @@ void Scene::AdvanceRungeKutta() {
     delta_pos += 2.0 * body->k3dx_ + body->k4dx_;
     delta_pos /= 6.0;
     body->setPos(body->pos() + delta_pos);
-    body->k1dv_ = QPointF(0,0);
-    body->k2dv_ = QPointF(0,0);
-    body->k3dv_ = QPointF(0,0);
-    body->k4dv_ = QPointF(0,0);
+    body->k1dv_ = QPointF(0, 0);
+    body->k2dv_ = QPointF(0, 0);
+    body->k3dv_ = QPointF(0, 0);
+    body->k4dv_ = QPointF(0, 0);
     if (trails_)
       AdvanceTrails(body);
   }
@@ -333,8 +333,8 @@ void Scene::ResolveCollisions() {
   foreach (Body *body, collision_list_) {
     qreal group_mass_ = 0;
     qreal group_volume_ = 0;
-    QPointF group_momentum_ = QPointF(0,0);
-    QPointF group_mass_center_ = QPointF(0,0);
+    QPointF group_momentum_ = QPointF(0, 0);
+    QPointF group_mass_center_ = QPointF(0, 0);
     local_collision_list_.append(body);
     CollidingGroupSearch(body);
     foreach (Body *colliding_body, local_collision_list_) {
