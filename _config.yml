@@ -1,0 +1,8 @@
+title: 2D Nbody Gravity Simulator
+description: 
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-architect
+
+gems:
+  - jekyll-mentions
