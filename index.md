@@ -2,8 +2,8 @@
 
 This is 2D N-Body Gravity simulator created in C++ with Qt 5 libraries.
 
-<div align="center"><a href="https://raw.githubusercontent.com/loruro/2D_Nbody_Gravity_Simulator/master/img/screenshot_1.png" target="_blank"><img src="https://raw.githubusercontent.com/loruro/2D_Nbody_Gravity_Simulator/master/img/screenshot_1.png" width="320"/></a><img src="https://raw.githubusercontent.com/loruro/2D_Nbody_Gravity_Simulator/master/img/screenshot_2.png" width="320"/></div>
-<div align="center"><img src="https://raw.githubusercontent.com/loruro/2D_Nbody_Gravity_Simulator/master/img/screenshot_3.png" width="320"/><img src="https://raw.githubusercontent.com/loruro/2D_Nbody_Gravity_Simulator/master/img/screenshot_4.png" width="320"/></div>
+<div align="center"><a href="https://raw.githubusercontent.com/loruro/2D_Nbody_Gravity_Simulator/master/img/screenshot_1.png" target="_blank"><img src="https://raw.githubusercontent.com/loruro/2D_Nbody_Gravity_Simulator/master/img/screenshot_1.png" width="320"/></a><a href="https://raw.githubusercontent.com/loruro/2D_Nbody_Gravity_Simulator/master/img/screenshot_2.png" target="_blank"><img src="https://raw.githubusercontent.com/loruro/2D_Nbody_Gravity_Simulator/master/img/screenshot_2.png" width="320"/></a></div>
+<div align="center"><a href="https://raw.githubusercontent.com/loruro/2D_Nbody_Gravity_Simulator/master/img/screenshot_3.png" target="_blank"><img src="https://raw.githubusercontent.com/loruro/2D_Nbody_Gravity_Simulator/master/img/screenshot_3.png" width="320"/></a><a href="https://raw.githubusercontent.com/loruro/2D_Nbody_Gravity_Simulator/master/img/screenshot_4.png" target="_blank"><img src="https://raw.githubusercontent.com/loruro/2D_Nbody_Gravity_Simulator/master/img/screenshot_4.png" width="320"/></a></div>
 
 You can create new planet-like object by pressing and holding left mouse button, moving towards direction it shall move and releasing the button.  
 There are also options for removing objects, dragging view, zooming view and pausing simulation.
